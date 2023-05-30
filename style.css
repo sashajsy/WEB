@@ -1,0 +1,414 @@
+body {
+  background-color: white;
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  width: auto;
+  height: auto;
+  color: #000000;
+}
+
+.nav {
+  display: flex;
+}
+
+.container {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  left: 198px;
+  top: 70px;
+}
+
+.color-changing-link {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s, background-color 0.3s; /* Анимация изменения цвета и фона */
+}
+
+.color-changing-link:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: orange; /* Изменение цвета анимации подчеркивания на оранжевый */
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.color-changing-link:hover:after,
+.color-changing-link.active:after {
+  transform: scaleX(1);
+}
+
+.color-changing-link.active {
+  color: gray; /* Изменение цвета активной ссылки */
+}
+
+.boxContainer {
+  width: 546px;
+  height: 42px;
+  top: 16px;
+  border-radius: 50px;
+}
+
+.elements_container {
+  height: 100%;
+  width: 100%;
+  vertical-align: middle;
+  background-color: #EEEEEE ;
+  border-radius: 50px;
+}
+
+.Search {
+  border: none;
+  height: 100%;
+  width: 100%;
+  padding: 0px 5px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-family: "Commissioner";
+  font-weight: 500;
+  background-color: #EEEEEE;
+  margin-left: 12px;
+}
+
+.Search:focus {
+  outline: none;
+}
+
+.container img {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  font-size: 26;
+  cursor: pointer;
+}
+
+select {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+}
+
+.line {
+  margin-top: -5px;
+  border: none;
+  border-top: 1px solid black;
+}
+
+.svg {
+  cursor: pointer;
+}
+
+.container-menu{
+  display: flex;
+  justify-content: center;
+  margin-top: 56px;
+  margin-left: 201px;
+  margin-right: 112px;
+}
+
+
+
+.sidebar a {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  color:  #666666;
+  width: 273px;
+  height: 40px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar a:not(:first-child) {
+  margin-top: 0px;
+}
+
+.line1 {
+  border: none;
+  border-top: 1px solid;
+  transition: opacity 0.3s;
+  opacity: 0;
+}
+
+.sidebar a.active {
+  background-color: #ff7f00;
+  color: white;
+}
+
+.sidebar a.active .line {
+  opacity: 1;
+}
+
+.sidebar {
+  margin-right: 272px;
+  width: 200px;
+  padding: 20px;
+}
+
+
+.container-header{
+  display: flex; 
+  border: none;
+}
+
+.main-header {
+  width: 188px;
+  height: 60px;
+  margin-left: 119px;
+  margin-right: 372px;
+
+  /* H1 */
+
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 150%;
+  /* identical to box height, or 60px */
+
+
+  /* Dark */
+
+  color: #292929;
+}
+
+.main-text{
+  width: 63px;
+  height: 21px;
+  margin-left: 119px;
+  margin-right: 372px;
+
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+
+  /* Secondary */
+
+  color: #666666;
+}
+
+.description-text{
+  width: 63px;
+  height: 21px;
+   
+
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+
+    /* Secondary */
+
+    color: #666666;
+  }
+
+.header-button{
+  display: flex;
+  border: none;
+}
+
+.button-dark {
+  width: 88px;
+  height: 40px;
+  left: 1138px;
+  top: 128px;
+  color: #EEEEEE;
+  
+  /* Dark */
+  
+  background: #292929;
+  border-radius: 8px 0px 0px 8px;
+}
+
+.button-white{
+  box-sizing: border-box;
+  width: 88px;
+  height: 40px;
+  left: 1226px;
+  top: 128px;
+  
+  /* Border and Dividers */
+  
+  border-width: 2px 2px 2px 0px;
+  border-style: solid;
+  border-color: #EBEBEB;
+  border-radius: 0px 8px 8px 0px;
+}
+
+.container-cards {
+  
+  width: 736px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-left: 119px;
+  grid-gap: 24px; 
+
+}
+
+
+.photocards-1{
+
+  width: 356px;
+  height: 428px;
+  left: 578px;
+  top: 229px;
+  
+  /* White */
+  
+  background: #FFFFFF;
+  /* Border and Dividers */
+}
+
+.card-image {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+.text{
+  box-sizing: border-box;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px 8px 0px 0px ;
+}
+
+.card-content {
+  margin-top: 16px;
+  margin-left: 24px;
+  margin-bottom: 68px;
+  
+
+}
+
+.photocards-1 .img{
+  width: 356px;
+  height: 200px;
+  left: 0px;
+  top: 0px;
+  border-radius: 8px;
+}
+
+.card-buttons {
+  box-sizing: border-box;
+  border: 1px 0px 0px 0px solid #EBEBEB;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 16px 16px 16px; 
+  gap: 8px;
+  border-radius: 0px 0px 8px 8px;
+  border: 2px solid #EBEBEB;
+}
+
+.header-text{
+  width: 92px;
+  height: 36px;
+  margin-left: 24px;
+  margin-top: 16px;
+
+  /* H2 */
+
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  /* identical to box height, or 36px */
+
+
+  /* Dark */
+
+  color: #292929;
+}
+
+.description-text{
+  height: 48px;
+  width: 308px;
+  margin-left: 24px;
+  top: 256px;
+
+  /* Basic */
+
+  font-family: 'Commissioner';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  /* or 24px */
+
+
+  /* Secondary */
+
+  color: #666666;
+}
+
+.buttoncards-orange {
+  width: 162px;
+  height: 40px;
+  display: inline-block;
+  font-size: 16px;
+  background-color: #EEEEEE;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+  background: #ED7135;
+  cursor: pointer;
+}
+
+
+.buttoncards-orange:hover {
+  background-color: #ff9f08;
+}
+
+.buttoncards-orange:active {
+  transform: scale(0.95);
+}
+
+
+.buttoncards-white {
+  width: 75px;
+  height: 40px;
+  left: 194px;
+  top: 372px;
+
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  border: 2px solid #EBEBEB;
+  border-radius: 8px;
+}
+
+.buttoncards-white:hover {
+  background-color: #f3f3f3;
+}
+
+.buttoncards-white:active {
+  transform: scale(0.95);
+}
